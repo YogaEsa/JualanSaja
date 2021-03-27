@@ -43,6 +43,10 @@ p {
   border: 0px !important;
 }
 
+.myselect {
+  width: 100%;
+}
+
 .navbar-brand img {
   width: 100%;
   max-width: 8rem;
@@ -114,6 +118,25 @@ p {
 }
 
 .button-default:hover {
+  transform: scale(0.9);
+  transition: transform 0.2s;
+  color: white;
+}
+
+.button-green {
+  font-family: 'Lato', Sans-serif;
+  font-size: 16px;
+  padding: 10px 25px 8px 25px;
+  text-transform: capitalize;
+  margin: auto auto;
+  text-decoration: none;
+  line-height: 1.3em;
+  color: #ffffff;
+  background-color: #1e7e34;
+  box-shadow: 0px 5px 0px 0px #1e7e34;
+}
+
+.button-green:hover {
   transform: scale(0.9);
   transition: transform 0.2s;
   color: white;
