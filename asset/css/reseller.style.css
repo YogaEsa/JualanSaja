@@ -12,6 +12,10 @@ p {
   font-weight: 400;
 }
 
+h3 {
+  color: #3c3733 !important;
+}
+
 .dropdown-divider {
   border-color: rgba(19, 17, 68, 0.23);
   margin-left: 2rem !important;
@@ -178,7 +182,7 @@ p {
 }
 
 .elementor-shape svg {
-  height: 40px;
+  height: 79px;
   display: block;
   width: calc(100% + 1.3px);
   position: relative;
@@ -186,6 +190,10 @@ p {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+
+.edit-size svg {
+  height: 39px !important;
 }
 
 .elementor-shape .elementor-shape-fill {
@@ -208,6 +216,15 @@ p {
 
 .elementor-shape .elementor-shape-fill-2 {
   fill: #f7f8fb;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.elementor-shape .elementor-shape-fill-3 {
+  fill: #f0f6ff;
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -263,89 +280,34 @@ h2 {
 }
 
 /* Section 3 */
-.founder-display {
-  background-color: #131144;
+.brand-display {
+  background-color: #3f47d2;
   position: relative;
-  padding: 5rem 1rem 1rem 1rem;
+  padding: 5rem 1rem 6rem 1rem;
 }
 
-.mycard {
+.brand-display .brandlogo {
+  display: flex;
+  justify-content: center;
   position: relative;
+  height: 100%;
+}
+
+.brand-display img {
+  position: absolute;
+  top: 45%;
+  max-width: 20rem;
   display: block;
-  border-radius: 10px;
-  margin-top: 7rem;
-  padding-right: 4rem;
-  padding-left: 4rem;
-  padding-bottom: 2rem;
-  margin-bottom: -200px;
-  z-index: 1;
-}
-
-.mycard img {
-  height: auto;
-  width: 100%;
-  max-width: 126px;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-}
-
-.profile-founder {
-  margin-top: -40px;
-  padding-top: 0;
-  font-family: 'Lato', sans-serif;
-}
-
-.profile-founder h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.profile-founder p {
-  font-size: 1rem;
+  margin: auto;
 }
 
 /* End Section 3 */
 
 /* Section 4 */
-.course-display {
-  position: relative;
-  padding: 18rem 0 4rem 0;
-  background-color: #f7f8fb;
-}
-
-.course-display img {
-  max-width: 40vh;
-  border-radius: 20px;
-}
-
-.course-display .card {
-  background-color: #f7f8fb;
-  border: 0px;
-}
-
-.course-display hr {
-  margin: 2.5rem 0;
-}
-
-/* End Section 4 */
-
-/* Section 5 */
-.users-display {
-  padding: 6rem 1rem 1rem 1rem;
-  position: relative;
-}
-
-/* End Section 5 */
-
-/* Section 6 */
 .benefit-display {
   padding: 6rem 1rem 5rem 1rem;
   position: relative;
-  background-color: #eaedf4;
+  background-color: #f0f6ff;
 }
 
 .benefit-display .card {
@@ -354,13 +316,46 @@ h2 {
   margin-bottom: 2rem;
 }
 
-.benefit-display .card-subtitle {
+.benefit-display .card img {
+  max-width: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+/* End Section 4 */
+
+/* Section 5 */
+.benefits-display {
+  padding: 6rem 1rem 4rem 1rem;
+  position: relative;
+}
+
+.users-display {
+  padding: 6rem 1rem 1rem 1rem;
+  position: relative;
+}
+
+/* End Section 5 */
+
+/* Section 6 */
+.benefit-display1 {
+  padding: 6rem 1rem 5rem 1rem;
+  position: relative;
+  background-color: #eaedf4;
+}
+
+.benefit-display1 .card {
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.benefit-display1 .card-subtitle {
   color: #2c2f3c !important;
   margin-top: 1rem !important;
   margin-bottom: 1rem !important;
 }
 
-.benefit-display p {
+.benefit-display1 p {
   font-weight: 400;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 17.5px;
@@ -790,9 +785,21 @@ footer {
   }
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 768px) {
   .flex-facility h4 {
     text-align: center !important;
+  }
+
+  .brand-display .brandlogo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    margin-bottom: 6rem;
+  }
+
+  .brandlogo img {
+    width: 15rem !important;
   }
 }
 
