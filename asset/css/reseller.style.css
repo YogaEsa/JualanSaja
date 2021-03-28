@@ -305,7 +305,7 @@ h2 {
 
 /* Section 4 */
 .benefit-display {
-  padding: 6rem 1rem 5rem 1rem;
+  padding: 6rem 1rem 1rem 1rem;
   position: relative;
   background-color: #f0f6ff;
 }
@@ -333,10 +333,81 @@ h2 {
   padding: 6rem 1rem 1rem 1rem;
   position: relative;
 }
-
 /* End Section 5 */
 
 /* Section 6 */
+.reward-display {
+  padding: 6rem 1rem 1rem 1rem;
+  position: relative;
+  background-color: #f0f6ff;
+}
+
+.reward-display img {
+  height: 230px;
+  margin-top: 2.5rem;
+}
+
+/* End Section 6 */
+
+/* Section 7 */
+.testimoni-display {
+  padding: 6rem 1rem 2rem 1rem;
+  position: relative;
+  background-color: #fff;
+}
+
+.mycards {
+  border: 0px;
+  border-left: 4px solid blue;
+  border-radius: 0px;
+  margin-bottom: 1rem;
+}
+
+.owl-carousel {
+  width: 10%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.owl-carousel img {
+  border-radius: 20px;
+}
+/* End Section 7 */
+
+/* -
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+- */
+
+/* Section 6 */
+
 .benefit-display1 {
   padding: 6rem 1rem 5rem 1rem;
   position: relative;
@@ -414,21 +485,6 @@ h2 {
 /* End Section 7 */
 
 /* Section 8 */
-.testimoni-display {
-  padding: 6rem 1rem 2rem 1rem;
-  position: relative;
-  background-color: #eaedf4;
-}
-
-.owl-carousel {
-  width: 10%;
-  padding: 0px;
-  margin: 0px;
-}
-
-.owl-carousel img {
-  border-radius: 20px;
-}
 
 /* End Section 8 */
 
@@ -782,6 +838,11 @@ footer {
   .mb-fs-5 {
     font-size: 1.05rem !important;
     text-align: center;
+  }
+
+  .reward-display img {
+    height: 200px;
+    margin-top: 2.5rem;
   }
 }
 
