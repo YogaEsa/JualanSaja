@@ -58,15 +58,14 @@ p {
 }
 
 .bg-default {
-  background-color: #4b21a1;
+  background-color: #164bb7;
   color: white;
 }
 
 .jumbotron {
   position: relative;
-  background-color: #4b21a1;
   color: white;
-  background-image: url(../img/Header.png);
+  background-image: linear-gradient(180deg, #164bb7 0%, #7143f3 100%);
   background-size: cover;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -74,21 +73,24 @@ p {
   border-radius: 0px;
 }
 
-.alert-default {
-  font-family: 'Lato', sans-serif;
+.jumbotron img {
   display: inline-block;
-  background-color: rgba(170, 128, 255, 0.25);
-  padding: 0.7rem 4rem;
-  border-radius: 50px;
+  vertical-align: middle;
+  width: 32rem;
+}
+
+.jumbotron img:hover {
+  opacity: 0.4;
+  animation-duration: 0.5s;
 }
 
 .display-4 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-}
-
-.lead {
-  margin-top: 1rem;
+  font-weight: 800;
+  font-style: bold;
+  line-height: 1.3em;
+  letter-spacing: 0.2px;
+  font-size: 2.9rem;
 }
 
 .divider {
@@ -220,8 +222,7 @@ p {
 }
 
 .info-display img {
-  width: 100%;
-  max-width: 1000px;
+  max-width: 900px;
   border-radius: 20px;
   height: auto;
   position: relative;
@@ -230,9 +231,12 @@ p {
 }
 
 h2 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 800;
-  color: #3b4254;
+  color: #3c3733;
+  font-style: bold;
+  line-height: 1.3em;
+  letter-spacing: 0.2px;
 }
 
 .mylist {
@@ -245,12 +249,12 @@ h2 {
 }
 
 .mylist i {
-  color: #e5b861;
+  color: #ffce48;
   margin-right: 20px;
 }
 
 .mylist {
-  border-bottom: 1px solid rgba(19, 17, 68, 0.23);
+  /* border-bottom: 1px solid rgba(19, 17, 68, 0.23); */
   padding: 0.5rem 1rem 0.5rem 0;
 }
 
@@ -698,6 +702,22 @@ footer {
   .text-center-sm {
     text-align: center !important;
   }
+
+  .display-4 {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+
+  .sub-display-4 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .jumbotron img {
+    margin: 5rem auto 2rem auto;
+    display: block;
+    width: 16rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -757,6 +777,17 @@ footer {
   .register-display h2 {
     font-size: 1.5rem;
   }
+
+  .info-display img {
+    display: block;
+    margin: 1rem auto;
+    width: 16rem;
+  }
+
+  .mb-fs-5 {
+    font-size: 1.05rem !important;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 766px) {
@@ -798,6 +829,14 @@ footer {
   .single_countdown {
     margin: auto 2rem;
   }
+
+  .display-4 {
+    margin-top: 4rem;
+  }
+
+  .vertical-middle {
+    margin-top: 6rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -829,7 +868,7 @@ footer {
   font-size: calc(1.275rem + 0.3vw) !important;
 }
 .fs-5 {
-  font-size: 1.25rem !important;
+  font-size: 1.25rem;
 }
 .fs-6 {
   font-size: 1rem !important;

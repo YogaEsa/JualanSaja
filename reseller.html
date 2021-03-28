@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="asset/css/reseller.style.css" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@100;300;500&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor -->
+    <link href="asset/vendor/OwlCarousel/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="asset/vendor/OwlCarousel/css/owl.theme.default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="asset/vendor/select2/select2.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@x.x.x/dist/select2-bootstrap4.min.css">
+
+    <title>Jualansaja.id</title>
+</head>
+
+<body>
+    <a id="back-top"></a>
+
+    <!-- Navabar -->
+    <nav class="navbar navbar-expand-lg nav-custom navbar-dark bg-default sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="asset/img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Reseller</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Product
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Madu El-Husna</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Jumbotron -->
+    <section class="jumbotron ">
+        <div class="container container-mobile-ver">
+            <div class="row">
+                <div class="col col-lg-12">
+                    <div class="row">
+                        <div class="col col-lg-6 ">
+                            <h1 class="display-4"><b>Bagaimana Anda Bisa Punya Penghasilan Tambahan Tanpa Keluar Rumah
+                                    & Dibimbing Jualan Selamanya</b></h1>
+                            <br>
+                            <h4 class="sub-display-4">TANPA HARUS STOK PRODUK!!</h4>
+                        </div>
+                        <div class="col col-lg-5">
+                            <img src="asset/img/reseller/uangvb.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="elementor-shape elementor-shape-bottom" data-negative="false">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                    <path class="elementor-shape-fill" opacity="0.33"
+                        d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill" opacity="0.66"
+                        d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <!-- End Jumbotron -->
+
+    <!-- Section 2 -->
+    <section class="info-display">
+        <div class="container-fluid">
+            <div class="row  ">
+                <div class="col-md-12 col-lg-6 align-middle ">
+                    <h2 class="fs-2 fw-bolder text-mobile-ver center-mobile-ver vertical-middle">
+                        </b>
+                        Sebelum Bergabung Reseller
+                        JualanSaja.id, Coba Anda Ingat <br>Kembali, Apakah Anda:
+                        </b>
+                    </h2>
+                    <br />
+
+                    <div class="d-flex flex-row mylist">
+                        <div class="p-2"><i class="fas fa-check"></i></div>
+                        <div class="p-2">Ingin punya penghasilan tambahan tanpa keluar rumah?</div>
+                    </div>
+                    <div class="d-flex flex-row mylist">
+                        <div class="p-2"><i class="fas fa-check"></i></div>
+                        <div class="p-2">Ingin jualan tapi belum punya produk?</div>
+                    </div>
+                    <div class="d-flex flex-row mylist">
+                        <div class="p-2"><i class="fas fa-check"></i></div>
+                        <div class="p-2">Ingin memulai bisnis tapi bingung mulai dari mana?</div>
+                    </div>
+                    <div class="d-flex flex-row mylist">
+                        <div class="p-2"><i class="fas fa-check"></i></div>
+                        <div class="p-2">Ingin punya bisnis tapi ga mau repot stok produk?</div>
+                    </div>
+                    <br>
+                    <div class="mb-fs-5 fs-5">Jika Anda menjawab “IYA” pada salah satu pertanyaan diatas, maka kami ucapkan
+                        selamat karena kami punya solusinya.</div>
+                </div>
+                 <div class="col-md-12 col-lg-6 order-lg-first">
+                    <img src="asset/img/reseller/2.png" alt="" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Section 2 -->
+
+    <!-- Section 3 -->
+    <section class="founder-display">
+        <div class="elementor-shape elementor-shape-top" data-negative="false">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path class="elementor-shape-fill" opacity="0.33"
+                    d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+                </path>
+                <path class="elementor-shape-fill" opacity="0.66"
+                    d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+                </path>
+                <path class="elementor-shape-fill"
+                    d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+                </path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-12 text-center">
+                    <br />
+                    <h5 class="white-text fs-5">Memperkenalkan</h5>
+                    <br />
+                    <h2 class="white-text fs-2">Jualansaja.Id</h2>
+                    <br />
+                    <p class="white-text fs-5 fw-light">Solusi terbaik belajar Bisnis Online</p>
+                </div>
+                <div class="col-md-12 col-lg-10 text-center">
+                    <div class="card mycard shadow mycard-mobile-ver">
+                        <img src="asset/img/aabba.png" class="card-img-top" alt="..." />
+                        <div class="profile-founder">
+                            <h3>ANDY ABA</h3>
+                            <p class="sub-text">Founder Jualansaja.id</p>
+                        </div>
+                        <div class="card-body fs-5">
+                            <p class="sub-text">Hai assalamu’alaikum, perkenalkan saya ANDY ABA.</p>
+                            <br />
+                            <p class="sub-text">Sebelumnya saya ucapkan terima kasih karena Anda sudah menyediakan waktu
+                                untuk membaca
+                                penawaran
+                                spesial ini. Saya sangat yakin, saat Anda membuka halaman ini, pasti Anda memiliki
+                                keinginan yang ingin
+                                Anda wujudkan.</p>
+                            <br />
+                            <p class="sub-text">
+                                Sebenarnya saya cukup puas dengan penghasilan saya saat ini. Namun, karena saya ingin
+                                memperluas
+                                kebermanfaatannya untuk orang lain, maka akhirnya saya membuka program ini dengan
+                                harapan semakin banyak
+                                orang-orang baru
+                                yang terjun ke dunia bisnis online..
+                            </p>
+                            <br />
+                            <p class="sub-text">Jualansaja.id adalah sebuah wadah dimana kita bisa belajar bersama
+                                mengenai bisnis
+                                online dan
+                                memperoleh penghasilan dari bisnis online.</p>
+                            <br />
+                            <p class="sub-text">Jadi selamat bergabung di Jualansaja.id, yuk kita sama-sama saling
+                                support dalam
+                                mencari rezeki yang
+                                Berkah dan Berlimpah.. Aamiin..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="elementor-shape elementor-shape-bottom" data-negative="false">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                    <path class="elementor-shape-fill-2" opacity="0.33"
+                        d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill-2" opacity="0.66"
+                        d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill-2"
+                        d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <!-- End Section 3 -->
+
+    <!-- Section 4 -->
+    <section class="course-display">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-12 text-center">
+                    <h2 class="class=" fs-2 fw-bolder">Inilah Yang Akan Anda Pelajari</h2>
+                    <br />
+                    <br />
+                </div>
+                <div class="col-md-12 col-lg-9">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-4 pdrd-0">
+                                <img src="asset/img/Peluang-Bisnis-Online.jpg" alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Overview Bisnis Online</h4>
+                                <p class="sub-text">Apa itu bisnis online? Kenapa harus bisnis online? Peluang Bisnis
+                                    Online.</p>
+                            </div>
+                        </div>
+                        <hr class="dropdown-divider" />
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-4 pdrd-0">
+                                <img src="asset/img/maxresdefault-4.jpg" alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Overview Bisnis Online</h4>
+                                <p class="sub-text">Apa itu bisnis online? Kenapa harus bisnis online? Peluang Bisnis
+                                    Online.</p>
+                            </div>
+                        </div>
+                        <hr class="dropdown-divider" />
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-4 pdrd-0">
+                                <img src="asset/img/Peluang-Bisnis-Online.jpg" alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Overview Bisnis Online</h4>
+                                <p class="sub-text">Apa itu bisnis online? Kenapa harus bisnis online? Peluang Bisnis
+                                    Online.</p>
+                            </div>
+                        </div>
+                        <hr class="dropdown-divider" />
+                    </div>
+
+                    <p class="text-center sub-text">Dan masih banyak lagi ilmu-ilmu lain yang akan terus diupdate sesuai
+                        perkembangan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section 4 -->
+
+    <!-- Section 5 -->
+    <section class="users-display">
+        <div class="container-fluid">
+            <div class="elementor-shape elementor-shape-top" data-negative="negatif">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                    <path class="elementor-shape-fill-2" opacity="0.33"
+                        d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill-2" opacity="0.66"
+                        d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill-2"
+                        d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+                    </path>
+                </svg>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-md-12 col-lg-12">
+                    <h2 class="text-center fw-bolder">Jualan saja <span class="red-text">Sangat Cocok Diikuti Oleh
+                            ..</span></h2>
+                    <br />
+                    <div class="d-flex flex-row mylist">
+                        <div class="p-2"><i class="fas fa-check"></i></div>
+                        <div class="p-2">Pemula yang ingin belajar bisnis online</div>
+                    </div>
+                    <div class="d-flex flex-row mylist">
+                        <div class="p-2"><i class="fas fa-check"></i></div>
+                        <div class="p-2">Mahasiswa</div>
+                    </div>
+                    <div class="d-flex flex-row mylist">
+                        <div class="p-2"><i class="fas fa-check"></i></div>
+                        <div class="p-2">Ibu rumah tangga</div>
+                    </div>
+                    <div class="d-flex flex-row mylist">
+                        <div class="p-2"><i class="fas fa-check"></i></div>
+                        <div class="p-2">Ibu rumah tangga</div>
+                    </div>
+                    <div class="d-flex flex-row mylist">
+                        <div class="p-2"><i class="fas fa-check"></i></div>
+                        <div class="p-2">Bapak rumah tangga</div>
+                    </div>
+                    <div class="d-flex flex-row mylist">
+                        <div class="p-2"><i class="fas fa-check"></i></div>
+                        <div class="p-2">Ga punya komunitas</div>
+                    </div>
+                    <div class="d-flex flex-row mylist">
+                        <div class="p-2"><i class="fas fa-check"></i></div>
+                        <div class="p-2">Semua orang yang ingin mempunyai penghasilan dari bisnis online</div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section 5 -->
+
+    <!-- Section 6 -->
+    <section class="benefit-display">
+        <div class="container-fluid">
+            <div class="elementor-shape elementor-shape-top" data-negative="false">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                    <path class="elementor-shape-fill" opacity="0.33"
+                        d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill" opacity="0.66"
+                        d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+                    </path>
+                </svg>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-md-12 col-lg-11">
+                    <h2 class="text-center">
+                        Keuntungan Yang Anda Dapatkan<br />
+                        <span class="red-text">Ketika Bergabung Bersama Jualansaja</span>
+                    </h2>
+                    <br />
+                    <div class="row text-center">
+                        <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
+                            <div class="card red-border">
+                                <div class="card-body">
+                                    <img src="asset/img/business-people-meeting.png" />
+                                    <br />
+                                    <br />
+                                    <h4 class="card-subtitle mb-2 fs-5 fw-bolder">FULL SUPPORT</h4>
+                                    <p class="card-text">
+                                        Jualansaja menyediakan Tim Support yang siap membantu Anda baik secara online
+                                        (melalui grup
+                                        Whatsapp, Telegram, Webinar, dan lain-lain) maupun offline (melalui event-event
+                                        Training dan
+                                        lain-lain) dimana Anda akan
+                                        langsung dibantu oleh para mentor.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
+                            <div class="card purple-border">
+                                <div class="card-body">
+                                    <img src="asset/img/business-people-meeting-1.png" />
+                                    <br />
+                                    <br />
+                                    <h4 class="card-subtitle mb-2 fs-5 fw-bolder">PENGHASILAN BESAR</h4>
+                                    <p class="card-text">
+                                        Selain belajar dan mendapatkan materi yang selalu diperbarui, salah satu
+                                        fasilitas “mahal” dan
+                                        bernilai di Jualansaja adalah Anda juga mendapat kesempatan untuk memiliki
+                                        penghasilan yang besar
+                                        dari dunia digital..
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
+                            <div class="card yellow-border">
+                                <div class="card-body">
+                                    <img src="asset/img/business-people-meeting-2.png" />
+                                    <br />
+                                    <br />
+                                    <h4 class="card-subtitle mb-2 fs-5 fw-bolder">STRATEGI JUALAN</h4>
+                                    <p class="card-text">
+                                        Salah satu hal yang WAJIB Anda miliki ketika berjualan adalah ILMU DAN STRATEGI.
+                                        Di luar sana, Anda
+                                        perlu mengeluarkan biaya yang cukup mahal untuk belajar dan mengikuti training,
+                                        sementara di
+                                        Jualansaja justru
+                                        dijadikan sebagai fasilitas untuk membantu Anda.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
+                            <div class="card red-border">
+                                <div class="card-body">
+                                    <img src="asset/img/business-people-meeting.png" />
+                                    <br />
+                                    <br />
+                                    <h4 class="card-subtitle mb-2 fs-5 fw-bolder">TANPA REPOT STOK DAN PENGIRIMAN</h4>
+                                    <p class="card-text">
+                                        Hal yang merepotkan dalam berbisnis online adalah proses pengemasan dan
+                                        pengiriman. Umumnya, Anda
+                                        harus melakukan seluruh proses bisnis sendiri mulai dari mengurus stok barang
+                                        hingga pengiriman.
+                                        Menariknya, di
+                                        Jualansaja kami akan mengurus itu semua.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="elementor-shape elementor-shape-bottom" data-negative="false">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                    <path class="elementor-shape-fill" opacity="0.33"
+                        d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill" opacity="0.66"
+                        d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <!-- End Section 6 -->
+
+    <!-- Section 7 -->
+    <section class="facility-display">
+        <div class="container-fluid">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-md-12 col-lg-11">
+                    <h2 class="text-center">
+                        Fasilitas Yang Anda Dapatkan<br />
+                        <span class="red-text">Ketika Bergabung Bersama Jualansaja</span>
+                    </h2>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column flex-md-row flex-facility">
+                                        <div class="p-2 text-center"><span><i class="fas fa-star"></i></span></div>
+                                        <div class="p-2">
+                                            <h4>Materi Iklan</h4>
+                                            <p class="sub-text justify-text">
+                                                Salah satu penyebab banyaknya bisnis yang merugi adalah karena tidak
+                                                memiliki konten
+                                                berkualitas. Untuk mendapatkannya, Anda perlu mengeluarkan biaya hingga
+                                                belasan juta rupiah
+                                                perbulan. Namun disini, Anda akan
+                                                mendapatkan puluhan konten baru GRATIS yang dapat Anda gunakan sebagai
+                                                materi beriklan.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column flex-md-row flex-facility">
+                                        <div class="p-2 text-center"><span><i class="fas fa-star"></i></span></div>
+                                        <div class="p-2">
+                                            <h4>Komunitas dan mentor</h4>
+                                            <p class="sub-text justify-text">Tidak perlu merasa sendiri, karena ada
+                                                komunitas yang positif
+                                                dan supportif. 95% member kami
+                                                yang mulanya gaptek (gagap teknologi) kini mulai memahami bahkan telah
+                                                mendapatkan hasil yang
+                                                nyata.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column flex-md-row flex-facility">
+                                        <div class="p-2 text-center"><span><i class="fas fa-star"></i></span></div>
+                                        <div class="p-2">
+                                            <h4>Training Online dan Ofline</h4>
+                                            <p class="sub-text justify-text">
+                                                Anda dapat belajar secara online (melalui website) maupun offline (tatap
+                                                muka). Bagi Anda yang
+                                                terkendala dengan masalah jarak dan waktu, Jualansaja menyiapkan
+                                                pembelajaran online lengkap
+                                                dengan sistem serta
+                                                kurikulumnya. Anda hanya perlu meluangkan waktu 1-2 jam per hari untuk
+                                                mengikuti seluruh
+                                                pembelajaran.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column flex-md-row flex-facility">
+                                        <div class="p-2 text-center"><span><i class="fas fa-star"></i></span></div>
+                                        <div class="p-2">
+                                            <h4>Supply Produk</h4>
+                                            <p class="sub-text justify-text">Salah satu kendala yang dialami oleh banyak
+                                                orang yang ingin
+                                                memulai bisnis online adalah
+                                                tidak punya produk. Namun tenang saja, disini Anda akan mendapatkan
+                                                supply produk dan sistem
+                                                dari Jualansaja.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section 7 -->
+
+    <!-- Section 8 -->
+    <section class="testimoni-display">
+        <div class="container-fluid">
+            <div class="elementor-shape elementor-shape-top" data-negative="false">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                    <path class="elementor-shape-fill" opacity="0.33"
+                        d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill" opacity="0.66"
+                        d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+                    </path>
+                </svg>
+            </div>
+            <div class="row  justify-content-center">
+                <div class="col-md-12 col-lg-12">
+                    <h2 class="text-center">
+                        Sebentar, Sebelum Anda Memutuskan Untuk Bergabung Sebaiknya
+                        <span class="red-text">Dengarkan <br />
+                            APA KATA MEREKA Yang Sudah Bergabung Dengan Jualansaja
+                        </span>
+                    </h2>
+                    <br />
+                    <div class="col-md-12 col-lg-12 text-center">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item"><img src="asset/img/Screenshot_20210318_191138-1.jpg" /></div>
+                            <div class="item"><img src="asset/img/Screenshot_20210318_190947-1.jpg" /></div>
+                            <div class="item"><img src="asset/img/Screenshot_20210318_191414-1.jpg" /></div>
+                            <div class="item"><img src="asset/img/Screenshot_20210318_191536-1.jpg" /></div>
+                            <div class="item"><img src="asset/img/Screenshot_20210318_191750-1.jpg" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Section 8 -->
+
+    <!-- Section 9 -->
+    <section class="package-display">
+        <div class="container-fluid">
+            <div class="elementor-shape elementor-shape-top" data-negative="false">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                    <path class="elementor-shape-fill-1" opacity="0.33"
+                        d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill-1" opacity="0.66"
+                        d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill-1"
+                        d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+                    </path>
+                </svg>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-11">
+                    <h2 class="text-center white-text">
+                        Ya Saya Tertarik, Berapa Investasinya?
+                    </h2>
+                    <br />
+                    <div class="col-md-12 col-lg-11 card-center">
+                        <div class="card red-border">
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder"><s>Rp 500.000</s></h5>
+                                <br>
+                                <h2 class="red-text h-lg">Rp 100.000</h2>
+                                <br />
+                                <hr class="dropdown-divider" />
+                                <br />
+                                <p>Full akses belajar bisnis online</p>
+                                <p>Bonus Produk Senilai Rp 80.000</p>
+                                <p>Otomatis menjadi reseller MADAD dan berhak mendapat Diskon 25% untuk pembelian produk
+                                    MADAD</p>
+                                <p>Reward</p>
+                                <p>Tools Marketing</p>
+                                <p>Konsultasi dengan mentor</p>
+                                <br>
+                                <button class="btn button-blue" data-toggle="modal" data-target="#exampleModal">Daftar
+                                    sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section 9 -->
+
+    <!-- Section 10 -->
+    <section class="register-display">
+        <div class="container-fluid">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-md-12 col-lg-12">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="card countdown">
+                            <div class="card-body text-center">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-6">
+                                        <h2>Tapi Ingat.. Promo Ini <br>Sangat Terbatas !!</h2>
+                                    </div>
+                                    <div class="col-md-12 col-lg-6 text-center">
+                                        <div id="clock" data-aos="flip-down" class="countdown_area"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-8 offset-lg-2">
+                        <div class="card regisnow">
+                            <div class="card-body text-center">
+                                <h2 class="fs-2 fw-bolder white-text">Yakin Tidak Daftar Sekarang?</h2>
+                                <p class="fs-5 lh-lg white-text">Yakin Tidak Daftar Sekarang?</p>
+                                <p class="fw-bold white-text">Orang sukses adalah orang yang berani mengambil sekecil
+                                    apapun peluang
+                                    yang
+                                    menghampirinya.</p>
+                                <br>
+                                <button class="btn button-red" data-toggle="modal" data-target="#exampleModal">Daftar
+                                    Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="elementor-shape elementor-shape-bottom" data-negative="false">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                    <path class="elementor-shape-fill-1" opacity="0.33"
+                        d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill-1" opacity="0.66"
+                        d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill-1"
+                        d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <!-- End Section 10 -->
+
+    <!-- Section 11 -->
+    <section class="faq-display">
+        <div class="bg-overlay"></div>
+        <div class="container">
+
+            <div class="row gx-5 justify-content-center">
+                <div class="col-md-12 col-lg-6 text-center-sm">
+                    <h2>Pertanyaan Yang Sering Ditanyakan (FAQ)</h2>
+                    <br>
+                    <button class="btn button-red" data-toggle="modal" data-target="#exampleModal">Hubungi Kami</button>
+                    <br> <br> <br>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="accordion myaccordion" id="accordionExample">
+                        <div class="accordion-item shadow">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <p class="fs-5 fw-bolder text-start title-ac">Apakah ini MLM?</p>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Bukan. Anda di sini adalah sebagai reseller resmi dari produk yang disediakan
+                                        Jualansaja, dan tidak
+                                        berkewajiban mengajak orang lain untuk menjadi agen penjualan.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item shadow">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <p class="fs-5 fw-bolder text-start title-ac">Apakah ada bimbingan?</p>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Ya, Anda akan dibimbing melalui group rahasia di Telegram dan Whatsapp</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item shadow">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <p class="fs-5 fw-bolder text-start title-ac">Bagaimana kalau tidak bisa jualan?</p>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Anda hanya perlu mengikuti langkah-langkah pada teknik jualan yang di share di
+                                        group dan berusaha
+                                        untuk mempromosikan produknya. Masalah hasil, serahkan pada Allah. Selain itu,
+                                        Anda bisa sharing di
+                                        group mengenai permasalahan-permasalahan dalam jualan dan bisa kita pecahkan
+                                        bersama-sama.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item shadow">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <p class="fs-5 fw-bolder text-start title-ac">Apakah ada biaya perpanjangan member?
+                                    </p>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Tidak ada. Keanggotaan berlaku seumur tanpa ada biaya lain-lain lagi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item shadow">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <p class="fs-5 fw-bolder text-start title-ac">Kemana Saya harus menghubungi jika
+                                        mengalami kesulitan?
+                                    </p>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Anda bisa menghubungi custumer service kami, insyaallah kami siap membantu. .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!-- End Section 11 -->
+
+    <footer>
+        <div class="container text-center">
+            <div class="elementor-shape elementor-shape-top" data-negative="false">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                    <path class="elementor-shape-fill-1" opacity="0.33"
+                        d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill-1" opacity="0.66"
+                        d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+                    </path>
+                    <path class="elementor-shape-fill-1"
+                        d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+                    </path>
+                </svg>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-md-12 col-lg-8 border-white">
+                    <h4 class="white-text"> Jualansaja.id</h4>
+                    <div class="white-text social-media">
+                        <span> <i class="fab fa-facebook-f"></i></span>
+                        <span> <i class="fab fa-instagram"></i></span>
+                        <span> <i class="fab fa-youtube"></i></span>
+                    </div>
+                    <br>
+                    <div class="dropdown-divider divider-white"></div>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                    <br>
+                    <p class="fw-normal white-text"><small>Disclaimer Jualansaja.id bukanlah program cepat kaya
+                            melainkan sebuah
+                            sarana belajar dan praktek bagi mereka yang ingin mempunyai penghasilan dari bisnis
+                            online.</small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="text-center fw-bold" id="exampleModalLabel"><i class="fab fa-whatsapp"></i> Setelah Isi
+                        Data Anda akan Otomatis Terhubung Dengan Admin Kami Lewat WhatsApp</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="" placeholder="Nama Lengkap">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="No WhatsApp (required)">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="state">
+                                <option value="reseler">Reseler</option>
+                                <option value="agen">Agen</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="kotaselect" name="state" aria-placeholder="Select">
+                                <option disabled selected> -- KOTA -- </option>
+                                <option value="AL">Alabama</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn button-green">Klik disini untuk Daftar Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <script src="asset/js/jquery.min.js""></script>
+  <script src=" asset/js/script.js""> </script> <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <!-- Vendor -->
+    <script src="asset/vendor/OwlCarousel/js/owl.carousel.min.js"></script>
+    <script src="asset/js/jquery.countdown.min.js"></script>
+    <script src="asset/vendor/select2/select2.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                center: true,
+                items: 3,
+                loop: true,
+                margin: 40,
+                animateOut: 'fadeOut',
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    480: {
+                        items: 3,
+                    },
+                },
+            });
+
+            $('#kotaselect').select2({
+                theme: 'bootstrap4',
+                placeholder: "Select a Kota",
+                allowClear: true
+            });
+        });
+    </script>
+    <script>
+        $('#clock').countdown('2021/04/08', function (event) {
+            $(this).html(event.strftime(
+                '<div class="countdown_wrap d-flex"><div  class="single_countdown"><h3 class="fs-2 fw-bolder">%D</h3><span>Hari</span></div><div class="single_countdown"><h3 class="fs-2 fw-bolder">%H</h3><span>Jam</span></div><div class="single_countdown"><h3 class="fs-2 fw-bolder">%M</h3><span>Menit</span></div><div class="single_countdown"><h3 class="fs-2 fw-bolder">%S</h3><span>Detik</span></div></div>'
+            ));
+        });
+
+        var btn = $('#back-top');
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 500) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, 600, 'swing');
+        });
+    </script>
+</body>
+
+</html>
