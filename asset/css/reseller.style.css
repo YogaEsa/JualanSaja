@@ -374,140 +374,73 @@ h2 {
 }
 /* End Section 7 */
 
-/* -
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
-- */
-
-/* Section 6 */
-
-.benefit-display1 {
-  padding: 6rem 1rem 5rem 1rem;
-  position: relative;
-  background-color: #eaedf4;
-}
-
-.benefit-display1 .card {
-  padding: 2rem;
-  border-radius: 15px;
-  margin-bottom: 2rem;
-}
-
-.benefit-display1 .card-subtitle {
-  color: #2c2f3c !important;
-  margin-top: 1rem !important;
-  margin-bottom: 1rem !important;
-}
-
-.benefit-display1 p {
-  font-weight: 400;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 17.5px;
-  color: rgba(59, 66, 84, 0.68) !important;
-}
-
-.red-border {
-  border-top: 5px solid #f53d65;
-}
-
-.yellow-border {
-  border-top: 5px solid #ffa117;
-}
-
-.purple-border {
-  border-top: 5px solid #a322b9;
-}
-
-/* End Section 6 */
-
-/* Section 7 */
-.facility-display {
-  padding: 3rem 1rem 1rem 1rem;
-  position: relative;
-  background-color: white;
-}
-
-.facility-display .card {
-  border: 0px;
-  border: 20px;
-  box-shadow: 0px 15px 65px 0px rgba(166, 172, 190, 0.18);
-  margin-bottom: 2rem;
-  padding: 1rem;
-}
-
-.flex-facility {
-  list-style-type: none;
-  font-family: 'Lato', sans-serif;
-  font-size: 18.5px;
-  font-weight: 400;
-}
-
-.flex-facility i {
-  color: white;
-  background-color: red;
-  border-radius: 30px;
-  padding: 10px 9px;
-  font-size: 16px;
-  text-align: center;
-}
-
-.facility-isi {
-  padding-left: 10px;
-}
-
-/* End Section 7 */
-
 /* Section 8 */
-
-/* End Section 8 */
-
-/* Section 9 */
 .package-display {
-  padding: 6rem 1rem 8rem 1rem;
+  padding: 6rem 1rem 4rem 1rem;
   position: relative;
-  background-color: #4b21a1;
+  background-color: #f0f6ff;
 }
 
 .package-display .card {
-  padding: 1.5rem;
+  border-radius: 35px;
+  overflow: hidden;
+  max-width: 490px;
+  padding: 2.5rem 1rem;
+  margin: 1rem auto;
 }
 
-.package-display .card hr {
-  border-top: 1px dashed rgba(0, 0, 0, 0.12);
+.package-display .d-flex {
+  margin: 1rem 0;
+}
+
+.package-display .d-flex i {
+  color: #ffce48;
+}
+
+.badge-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* End Section 8 */
+
+/* Section 9 */
+.promo-display {
+  position: relative;
+  background-color: #fff;
+}
+
+.promo-display .card {
+  max-width: 1140px;
+  border: 0px;
+  background-color: #f0f6ff;
+  border-radius: 20px;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  margin: auto;
+}
+
+.countdown {
+  top: -8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.countdown_wrap {
+  padding: auto 2rem !important;
+  text-align: center;
 }
 
 .button-blue {
-  margin-top: 20px;
-  padding: 15px 35px;
+  margin-top: 30px;
+  padding: 14px 35px;
   font-family: 'Lato', Sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: capitalize;
   font-style: normal;
@@ -515,7 +448,7 @@ h2 {
   line-height: 1.3em;
   fill: #ffffff;
   color: #ffffff;
-  background-color: #5bc0de;
+  background-color: #2a1aa9;
   border-radius: 30px 30px 30px 30px;
 }
 
@@ -537,6 +470,8 @@ h2 {
 
 .button-blue:hover {
   color: #ffffff;
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .button-red:hover {
@@ -545,159 +480,19 @@ h2 {
   transition: 0.4s;
 }
 
-/* End Section 9 */
-
-/* Section 10 */
-.register-display {
-  padding: 6rem 1rem 5rem 1rem;
-  position: relative;
-  background-color: #131144;
-}
-
-.countdown {
-  top: -8rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  height: auto;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  border-radius: 15px;
-}
-
-.regisnow {
-  background-color: rgba(227, 239, 255, 0.5);
-  background-image: url(../img/Section-101-Kerugian-BG-Img-Ornament.png);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 1;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-  border-radius: 20px;
-  padding: 2.5rem;
-}
-
-/* End Section 10 */
-
-/* Section 11 */
-.faq-display {
-  padding: 6rem 1rem 5rem 1rem;
-  position: relative;
-  background-color: #fff;
-}
-
-.bg-overlay {
-  background-image: url(../img/Section-101-FAQ-BG-Img-Ornament.png);
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 1;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-}
-
-.bg-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.myaccordion .accordion-item .accordion-header > button {
-  display: block;
-  position: relative;
-  background-image: none;
-  width: 100%;
-}
-
-.myaccordion .accordion-item .accordion-header > button:after {
-  font-size: 1.4rem;
-  content: '\f067';
-  font-family: 'Font Awesome 5 Free';
-  position: absolute;
-  right: 1rem;
-  top: 35%;
-  font-weight: 600;
-  background-image: none;
-
-  color: #f5365f;
-  transition: none;
-}
-
-.myaccordion .accordion-item .accordion-header > button[aria-expanded='true']:after {
-  right: 0.1rem;
-  top: 35%;
-  content: '\f068';
-  font-size: 1.4rem;
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 600;
-  background-image: none;
-  margin-right: 20px;
-  color: #f5365f;
-  transition: none;
-}
-
-.myaccordion .accordion-item {
-  margin-bottom: 3rem;
-  border: 0px;
-}
-
-.accordion-button {
-  border: 0px !important;
-  padding: 1.5rem;
-  background-color: white;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: white;
-  color: #3b4254;
-}
-
-.accordion-body p {
-  background-color: white;
-  padding: 1.5rem;
-  font-style: italic;
-  color: rgba(59, 66, 84, 0.68);
-  text-align: justify;
-  font-size: 17px;
-}
-
-.title-ac {
-  margin-bottom: 0px !important;
-}
-
 /* End Section 11 */
 
 /* Footer */
 footer {
   padding: 6rem 1rem 5rem 1rem;
   position: relative;
-  background-color: #131144;
+  background-color: #5545e1;
 }
 
-.social-media span {
-  width: 55px;
-  height: 55px;
-  border: 1px solid white;
-  display: inline-block;
-  border-radius: 50%;
-  margin: 1.2rem 0.8rem;
-  font-size: 1.8rem;
-}
-
-.social-media span i {
-  position: relative;
-  top: 5px;
-}
-
-.fa-circle {
-  font-size: 1px;
-}
-
-.divider-white {
-  border-color: rgba(255, 255, 255, 0.11);
+footer .card {
+  margin-bottom: 1.7rem;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 
 /* End Footer */
@@ -843,6 +638,10 @@ footer {
   .reward-display img {
     height: 200px;
     margin-top: 2.5rem;
+  }
+
+  .promo-display .card {
+    text-align: center;
   }
 }
 
