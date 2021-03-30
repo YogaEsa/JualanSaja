@@ -9,6 +9,14 @@ p {
   line-height: 1.6;
 }
 
+.bg-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
 /*---------------------------------------- 
           Color And Position Text 
   ---------------------------------------*/
@@ -56,7 +64,7 @@ p {
 }
 
 .title-4 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 /*---------------------------------------- 
@@ -99,7 +107,7 @@ p {
 }
 
 .elementor-shape svg {
-  height: 40px;
+  height: 50px;
   display: block;
   width: calc(100% + 1.3px);
   position: relative;
@@ -110,25 +118,6 @@ p {
 }
 
 .elementor-shape .elementor-shape-fill {
-  fill: #fff;
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center;
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-}
-
-.elementor-shape .elementor-shape-fill-1 {
-  fill: #eaedf4;
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center;
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-}
-
-.elementor-shape .elementor-shape-fill-2 {
-  fill: #f7f8fb;
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -174,7 +163,6 @@ footer {
               Jumbotron Section 
   ---------------------------------------*/
 .jumbotron {
-  position: relative;
   background-color: #feda7c;
   color: white;
   background-image: url(../img/madu/Header.png);
@@ -224,53 +212,80 @@ footer {
   padding-top: 1rem;
 }
 
-/* Section 3 */
-.founder-display {
-  background-color: #131144;
-  position: relative;
-  padding: 5rem 1rem 1rem 1rem;
+.userloop .owl-dot {
+  display: hidden !important;
 }
 
-.mycard {
-  position: relative;
+.trusted-display {
+  padding-bottom: 6rem;
+}
+
+/*---------------------------------------- 
+              Pandemi Section3 
+  ---------------------------------------*/
+
+.pandemi-display {
+  background-color: #fff3e8;
+  padding-top: 3.5rem;
+  padding-bottom: 3rem;
+}
+
+.pandemi-display .elementor-shape-fill {
+  fill: white;
+}
+
+.pandemi-display img {
   display: block;
-  border-radius: 10px;
-  margin-top: 7rem;
-  padding-right: 4rem;
-  padding-left: 4rem;
-  padding-bottom: 2rem;
-  margin-bottom: -200px;
-  z-index: 1;
+  text-align: center;
+  margin: auto;
 }
 
-.mycard img {
-  height: auto;
+/*---------------------------------------- 
+              Solution Section4 
+  ---------------------------------------*/
+
+.solution-display {
+  background-color: #ffd465;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.solution-display .elementor-shape-fill {
+  fill: #fff3e8;
+}
+
+.solution-display .bg-overlay {
+  background-image: url('../img/madu/Section-031-Intro2-BG-Img-Ornament-1.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.solution-display .img-sol {
+  max-width: 400px;
   width: 100%;
-  max-width: 126px;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
+  min-width: 254;
+  border: 3px solid white;
+  border-radius: 20px;
+  margin: auto;
+  display: block;
 }
 
-.profile-founder {
-  margin-top: -40px;
-  padding-top: 0;
-  font-family: 'Lato', sans-serif;
+/*---------------------------------------- 
+              Benefits Section5 
+  ---------------------------------------*/
+
+.benefit-display {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  background-color: white;
 }
 
-.profile-founder h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
+.benefit-display .elementor-shape-fill {
+  fill: #ffd465;
 }
-
-.profile-founder p {
-  font-size: 1rem;
-}
-
-/* End Section 3 */
 
 /* Section 4 */
 .course-display {
@@ -302,34 +317,6 @@ footer {
 }
 
 /* End Section 5 */
-
-/* Section 6 */
-.benefit-display {
-  padding: 6rem 1rem 5rem 1rem;
-  position: relative;
-  background-color: #eaedf4;
-}
-
-.benefit-display .card {
-  padding: 2rem;
-  border-radius: 15px;
-  margin-bottom: 2rem;
-}
-
-.benefit-display .card-subtitle {
-  color: #2c2f3c !important;
-  margin-top: 1rem !important;
-  margin-bottom: 1rem !important;
-}
-
-.benefit-display p {
-  font-weight: 400;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 17.5px;
-  color: rgba(59, 66, 84, 0.68) !important;
-}
-
-/* End Section 6 */
 
 /* Section 7 */
 .facility-display {
