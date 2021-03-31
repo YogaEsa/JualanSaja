@@ -42,7 +42,8 @@ p {
 .title-1,
 .title-2,
 .title-3,
-.title-4 {
+.title-4,
+.title-5 {
   display: block;
   font-weight: bold;
   text-transform: capitalize;
@@ -67,9 +68,72 @@ p {
   font-size: 20px;
 }
 
+.title-5 {
+  font-size: 16px;
+}
+
 /*---------------------------------------- 
-              Size Text Title Normal
+              Button Style  
   ---------------------------------------*/
+.button-yellow,
+.button-yellow-rounded,
+.button-white {
+  margin-top: 20px;
+  font-family: 'Roboto', Sans-serif;
+  text-transform: capitalize;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.3em;
+}
+
+.button-white {
+  padding: 15px 35px;
+  font-size: 17px;
+  color: #feda7c;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.button-yellow {
+  padding: 18px 43px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #ffd465;
+  border-radius: 10px;
+}
+
+.button-yellow-rounded {
+  background-color: #f0ad4e;
+  padding: 14px 35px;
+  border-radius: 250px;
+  color: #fff;
+}
+
+.btn-success {
+  font-size: 14px !important;
+  font-weight: normal !important;
+  padding: 14px 30px;
+  border-radius: 0px;
+  margin: auto;
+}
+
+.button-white:hover {
+  color: #feda7c;
+  transform: scale(0.9);
+  transition: 0.4s;
+}
+
+.button-yellow:hover {
+  color: #fff;
+  transform: scale(0.9);
+  transition: 0.4s;
+}
+
+.button-yellow-rounded:hover {
+  color: #fff;
+  transform: scale(0.9);
+  transition: 0.4s;
+}
 
 /*---------------------------------------- 
                 SVG 
@@ -134,7 +198,7 @@ p {
 }
 
 .top-nav-collapse {
-  background-color: #131144 !important;
+  background-color: #3f3210 !important;
   transition-duration: 0.5s;
 }
 
@@ -155,6 +219,7 @@ p {
 .benefit-display,
 .testimoni-display,
 .price-display,
+.promo-display,
 footer {
   position: relative;
 }
@@ -287,308 +352,132 @@ footer {
   fill: #ffd465;
 }
 
-/* Section 4 */
-.course-display {
-  position: relative;
-  padding: 18rem 0 4rem 0;
-  background-color: #f7f8fb;
-}
+/*---------------------------------------- 
+              Testimoni Section6 
+  ---------------------------------------*/
 
-.course-display img {
-  max-width: 40vh;
-  border-radius: 20px;
-}
-
-.course-display .card {
-  background-color: #f7f8fb;
-  border: 0px;
-}
-
-.course-display hr {
-  margin: 2.5rem 0;
-}
-
-/* End Section 4 */
-
-/* Section 5 */
-.users-display {
-  padding: 6rem 1rem 1rem 1rem;
-  position: relative;
-}
-
-/* End Section 5 */
-
-/* Section 7 */
-.facility-display {
-  padding: 3rem 1rem 1rem 1rem;
-  position: relative;
-  background-color: white;
-}
-
-.facility-display .card {
-  border: 0px;
-  border: 20px;
-  box-shadow: 0px 15px 65px 0px rgba(166, 172, 190, 0.18);
-  margin-bottom: 2rem;
-  padding: 1rem;
-}
-
-.flex-facility {
-  list-style-type: none;
-  font-family: 'Lato', sans-serif;
-  font-size: 18.5px;
-  font-weight: 400;
-}
-
-.flex-facility i {
-  color: white;
-  background-color: red;
-  border-radius: 30px;
-  padding: 10px 9px;
-  font-size: 16px;
-  text-align: center;
-}
-
-.facility-isi {
-  padding-left: 10px;
-}
-
-/* End Section 7 */
-
-/* Section 8 */
 .testimoni-display {
-  padding: 6rem 1rem 2rem 1rem;
-  position: relative;
-  background-color: #eaedf4;
+  background-color: #3f3210;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
 }
 
-.owl-carousel {
-  width: 10%;
-  padding: 0px;
-  margin: 0px;
+.testimoni-display .elementor-shape-fill {
+  fill: white;
 }
 
-.owl-carousel img {
+.testimoni-display .owl-carousel img {
   border-radius: 20px;
+  border: 4px solid white;
 }
 
-/* End Section 8 */
+/*---------------------------------------- 
+              Price Section7 
+  ---------------------------------------*/
 
-/* Section 9 */
-.package-display {
-  padding: 6rem 1rem 8rem 1rem;
-  position: relative;
-  background-color: #feda7c;
+.price-display {
+  background-color: #fff;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
 }
 
-.package-display .card {
-  padding: 1.5rem;
+.price-display .elementor-shape-fill {
+  fill: #3f3210;
 }
 
-.package-display .card hr {
-  border-top: 1px dashed rgba(0, 0, 0, 0.12);
+.product-250ml {
+  margin: auto;
+  align-self: center;
 }
 
-.button-white {
-  margin-top: 20px;
-  padding: 15px 35px;
-  font-family: 'Lato', Sans-serif;
-  font-size: 17px;
-  text-transform: capitalize;
-  font-style: normal;
-  text-decoration: none;
-  line-height: 1.3em;
-  color: #feda7c;
-  background-color: white;
-  border-radius: 30px 30px 30px 30px;
-}
-
-.button-white:hover {
-  color: #feda7c;
-  transform: scale(0.9);
-  transition: 0.4s;
-}
-
-.button-red {
-  margin-top: 20px;
-  padding: 15px 35px;
-  font-family: 'Lato', Sans-serif;
-  font-size: 17px;
-  font-weight: 600;
-  text-transform: capitalize;
-  font-style: normal;
-  text-decoration: none;
-  line-height: 1.3em;
-  fill: #ffffff;
-  color: #ffffff;
-  background-color: #f5365f;
-  border-radius: 30px 30px 30px 30px;
-}
-
-.button-red:hover {
-  color: #ffffff;
-  transform: scale(0.9);
-  transition: 0.4s;
-}
-
-/* End Section 9 */
-
-/* Section 10 */
-.register-display {
-  padding: 6rem 1rem 5rem 1rem;
-  position: relative;
-  background-color: #131144;
-}
-
-.countdown {
-  top: -8rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  height: auto;
+.product-500ml img {
+  max-width: 500px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  border-radius: 15px;
+  min-width: 257px;
+  vertical-align: center;
 }
 
-.regisnow {
-  background-color: rgba(227, 239, 255, 0.5);
-  background-image: url(../img/Section-101-Kerugian-BG-Img-Ornament.png);
-  background-size: cover;
+.product-250ml img {
+  max-width: 277px;
+  width: 100%;
+  min-width: 257px;
+}
+
+/*---------------------------------------- 
+              Promo Section8 
+  ---------------------------------------*/
+
+.promo-display {
+  background-color: #fff;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+
+.promo-display .garansi {
+  background-image: url(../img/madu/bghero-madu.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 1;
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-  border-radius: 20px;
-  padding: 2.5rem;
-}
-
-/* End Section 10 */
-
-/* Section 11 */
-.faq-display {
-  padding: 6rem 1rem 5rem 1rem;
-  position: relative;
-  background-color: #fff;
-}
-
-.bg-overlay {
-  background-image: url(../img/Section-101-FAQ-BG-Img-Ornament.png);
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 1;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-}
-
-.bg-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+  padding: 4rem;
   width: 100%;
+  border-radius: 2rem;
 }
 
-.myaccordion .accordion-item .accordion-header > button {
+.promo-display .container {
+  margin-top: -5.8rem;
+}
+
+.garansi .card-body {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 4rem;
+}
+
+.card-body img {
+  max-width: 192px;
+  width: 100%;
+  margin: auto;
   display: block;
-  position: relative;
-  background-image: none;
+}
+
+.countdown {
+  background-color: #fff5db;
+  top: -8rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  height: auto;
   width: 100%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  vertical-align: center;
+  align-self: center;
+  border: 0;
 }
 
-.myaccordion .accordion-item .accordion-header > button:after {
-  font-size: 1.4rem;
-  content: '\f067';
-  font-family: 'Font Awesome 5 Free';
-  position: absolute;
-  right: 1rem;
-  top: 35%;
-  font-weight: 600;
-  background-image: none;
-
-  color: #f5365f;
-  transition: none;
+.countdown .title-2 {
+  display: block;
+  height: 100%;
+  vertical-align: middle;
 }
 
-.myaccordion .accordion-item .accordion-header > button[aria-expanded='true']:after {
-  right: 0.1rem;
-  top: 35%;
-  content: '\f068';
-  font-size: 1.4rem;
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 600;
-  background-image: none;
-  margin-right: 20px;
-  color: #f5365f;
-  transition: none;
-}
-
-.myaccordion .accordion-item {
-  margin-bottom: 3rem;
-  border: 0px;
-}
-
-.accordion-button {
-  border: 0px !important;
-  padding: 1.5rem;
-  background-color: white;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: white;
-  color: #3b4254;
-}
-
-.accordion-body p {
-  background-color: white;
-  padding: 1.5rem;
-  font-style: italic;
-  color: rgba(59, 66, 84, 0.68);
-  text-align: justify;
-  font-size: 17px;
-}
-
-.title-ac {
-  margin-bottom: 0px !important;
-}
-
-/* End Section 11 */
-
-/* Footer */
+/*---------------------------------------- 
+              Footer  
+  ---------------------------------------*/
 footer {
-  padding: 6rem 1rem 5rem 1rem;
-  position: relative;
-  background-color: #131144;
+  background-color: #3f3210;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
 }
 
-.social-media span {
-  width: 55px;
-  height: 55px;
-  border: 1px solid white;
-  display: inline-block;
-  border-radius: 50%;
-  margin: 1.2rem 0.8rem;
-  font-size: 1.8rem;
+footer .elementor-shape-fill {
+  fill: white;
 }
 
-.social-media span i {
-  position: relative;
-  top: 5px;
-}
-
-.fa-circle {
-  font-size: 1px;
-}
-
-.divider-white {
-  border-color: rgba(255, 255, 255, 0.11);
-}
-
-/* End Footer */
-
-/* back to Top */
+/*---------------------------------------- 
+              Back To TOP  
+  ---------------------------------------*/
 #back-top {
   text-decoration: none;
   display: inline-block;
@@ -631,13 +520,30 @@ footer {
   visibility: visible;
 }
 
+/*---------------------------------------- 
+              Modal   
+  ---------------------------------------*/
+.modal-body .form-control {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400 !important;
+  color: #333;
+  font-size: 13px;
+}
+
+.modal-body i {
+  font-size: 10px;
+}
+
+.img-modal img {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
 @media screen and (max-width: 420px) {
   .single_countdown {
     margin: auto 0.3rem !important;
-  }
-
-  .text-center-sm {
-    text-align: center !important;
   }
 }
 
@@ -646,40 +552,15 @@ footer {
     text-align: center;
   }
 
+  .jumbotron .btn {
+    margin-bottom: 2rem;
+  }
+
   .display-4 {
     font-size: 2.4rem;
     letter-spacing: 2px;
     margin-bottom: 1rem;
     margin-top: 2rem;
-  }
-
-  h2.text-mobile-ver {
-    padding-top: 2rem;
-  }
-
-  .center-mobile-ver {
-    text-align: center;
-  }
-
-  .mycard-mobile-ver {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .alert-default {
-    padding: 0.7rem 1rem;
-  }
-
-  .text-nav {
-    margin-top: 20px;
-  }
-
-  .course-display img {
-    margin-bottom: 1.5rem;
-  }
-
-  .course-display .row {
-    text-align: center !important;
   }
 
   .countdown_area {
@@ -692,23 +573,76 @@ footer {
   .single_countdown {
     margin: auto 0.5rem;
   }
-
-  .fa-li {
-    display: none;
-  }
-
-  .flex-facility h4 {
-    text-align: center !important;
-  }
-
-  .register-display h2 {
-    font-size: 1.5rem;
-  }
 }
 
 @media screen and (max-width: 766px) {
-  .flex-facility h4 {
+  .text-center-md {
     text-align: center !important;
+  }
+  .title-1 {
+    font-size: 32px;
+  }
+
+  .title-2 {
+    font-size: 26px;
+  }
+
+  .title-3 {
+    font-size: 20px;
+  }
+
+  .title-4 {
+    font-size: 16px;
+  }
+
+  .title-5 {
+    font-size: 16px;
+  }
+
+  .trusted-display,
+  .pandemi-display,
+  .solution-display,
+  .benefit-display,
+  .testimoni-display,
+  .price-display {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .pandemi-display {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+  }
+
+  .solution-display .img-sol {
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+
+  .price-display .btn {
+    margin-bottom: 3rem;
+  }
+
+  .promo-display .garansi {
+    padding: 2rem;
+  }
+
+  .promo-display .title-1 {
+    font-size: 30px;
+    margin-top: 2.5rem;
+  }
+
+  .promo-display p {
+    margin-top: 2rem;
+  }
+
+  .promo-txt {
+    margin-bottom: 4rem;
+    font-size: 30px;
+  }
+
+  footer .title-3 {
+    font-size: 30px;
   }
 }
 
@@ -743,13 +677,13 @@ footer {
   }
 
   .single_countdown {
-    margin: auto 2rem;
+    margin: auto 1rem;
   }
 }
 
 @media screen and (max-width: 992px) {
   .single_countdown {
-    margin: auto 1.5rem;
+    margin: auto 1rem;
   }
 
   .countdown_area {
