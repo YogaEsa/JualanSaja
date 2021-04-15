@@ -355,12 +355,16 @@ footer .elementor-shape-fill {
 }
 
 @media screen and (max-width: 600px) {
-  .jumbotron {
-    text-align: center;
+  .total-price {
+    text-align: center !important;
   }
 
-  .jumbotron .btn {
-    margin-bottom: 2rem;
+  .list-cart {
+    text-align: center !important;
+  }
+
+  .jumbotron {
+    text-align: center;
   }
 
   .display-4 {
@@ -383,6 +387,16 @@ footer .elementor-shape-fill {
 }
 
 @media screen and (max-width: 766px) {
+  .trusted-display {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+
+  .subtotal {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
   .text-center-md {
     text-align: center !important;
   }
@@ -412,8 +426,8 @@ footer .elementor-shape-fill {
   .benefit-display,
   .testimoni-display,
   .price-display {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .pandemi-display {
@@ -454,9 +468,28 @@ footer .elementor-shape-fill {
 }
 
 @media screen and (min-width: 993px) {
+  .formpengiriman {
+    padding: 0.5em 1.5em 1.5em 1.5em;
+  }
+  .alert-expedisi {
+    min-height: 475px;
+  }
+  .total-price {
+    float: right;
+  }
+
+  .subtotal {
+    text-align: center;
+  }
+
+  .set-qty {
+    max-width: 130px !important;
+    float: right;
+  }
+
   .jumbotron {
-    padding-top: 3rem;
-    padding-bottom: 9em;
+    padding-top: 2.2rem;
+    padding-bottom: 7em;
   }
 
   .info-display .row {
@@ -490,6 +523,10 @@ footer .elementor-shape-fill {
 }
 
 @media screen and (max-width: 992px) {
+  .total-price {
+    text-align: right;
+  }
+
   .single_countdown {
     margin: auto 1rem;
   }
