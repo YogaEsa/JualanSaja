@@ -34,15 +34,25 @@
 
 <body>
   <a id="back-top"></a>
-
+  <a href="cart.html" class="notification">
+    <i class="fa fa-shopping-cart"></i>
+    <span class="badge">3</span>
+  </a>
   <!-- Navabar -->
   <nav class="navbar navbar-expand-lg nav-custom navbar-dark bg-default sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="asset/img/logo.png"></a>
+      <div class="d-block d-sm-none float-right"> 
+      <a href="cart.html" class="notif">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="badge">3</span>
+        </a>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -67,6 +77,12 @@
             <a class="nav-link" href="#">Login</a>
           </li>
         </ul>
+      </div>
+      <div class="d-none d-sm-block">
+        <a href="#" class="notif ml-4">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="badge">3</span>
+      </a>
       </div>
     </div>
   </nav>
@@ -117,7 +133,7 @@
                         <p class="fs-4">Rp 180,000 </p>
                       </div>
                       <div class="col-lg-4">
-                        <input type="number" min="1" name="jumlahProduk1" id="jumlahProduk1" readonly="" value="1"
+                        <input type="number" min="1" name="jumlahProduk1" id="jumlahProduk1"  value="1"
                           class="form-control mb-2 set-qty">
                         <a class="btn btn-danger btn-md btn-block set-qty" href="javascript:void(0)"
                           onclick="deleteCart(14)">
@@ -147,7 +163,7 @@
                         <p class="fs-4">Rp 180,000 </p>
                       </div>
                       <div class="col-lg-4">
-                        <input type="number" min="1" name="jumlahProduk1" id="jumlahProduk1" readonly="" value="1"
+                        <input type="number" min="1" name="jumlahProduk1" id="jumlahProduk1"  value="1"
                           class="form-control mb-2 set-qty">
                         <a class="btn btn-danger btn-md btn-block set-qty" href="javascript:void(0)"
                           onclick="deleteCart(14)">
@@ -163,7 +179,7 @@
               <div class="col-lg-12 mt-2">
                 <br>
                 <div class="d-flex justify-content-between mt-4">
-                  <a href="produk.html">
+                  <a href="product.html">
                   <button class="btn btn-warning text-white"><i class="fas fa-arrow-left mr-2"></i> Belanja
                     Lagi</button></a>
                     <a href="pengiriman.html">

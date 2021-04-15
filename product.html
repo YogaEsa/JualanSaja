@@ -34,8 +34,7 @@
 
 <body>
   <a id="back-top"></a>
-
-  <a href="#" class="notification">
+  <a href="cart.html" class="notification">
     <i class="fa fa-shopping-cart"></i>
     <span class="badge">3</span>
   </a>
@@ -44,7 +43,7 @@
     <div class="container">
       <a class="navbar-brand" href="#"><img src="asset/img/logo.png"></a>
       <div class="d-block d-sm-none float-right"> 
-      <a href="#" class="notif">
+      <a href="cart.html" class="notif">
         <i class="fa fa-shopping-cart"></i>
         <span class="badge">3</span>
         </a>
@@ -88,7 +87,6 @@
     </div>
   </nav>
   <!-- End Navbar -->
-  <!-- End Navbar -->
 
   <!-- Jumbotron -->
   <section class="jumbotron">
@@ -97,7 +95,7 @@
       <div class="row">
         <div class="col col-lg-12 col-sm-12 text-center">
           <h1 class="fs-1 fw-bolder"><span class="badge badge-primary rounded-circle px-4 py-4 mr-3"
-              style="background-color:#3F3210;"><i class="fas fa-shipping-fast"></i></span>Shipping Data</h1>
+              style="background-color:#3F3210;"><i class="far fa-list-alt"></i></i></span>Product List</h1>
         </div>
       </div>
     </div>
@@ -108,119 +106,88 @@
   <section class="trusted-display">
     <div class="container">
       <div class="row ">
-        <div class="col-lg-12">
-          <div class="card shadow mb-5">
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <div class="p-2 bd-highlight fw-bolder fs-4 yellow-text">Data Pengiriman </div>
+        <div class="col-lg-10 mx-auto">
+          <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+          <div class="container">
+            <div class="shop-default shop-cards shop-tech">
+              <div class="row mb-5">
+                <div class="col-md-6">
+                  <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                    <div class="block-image text-center">
+                      <a href="#">
+                        <img src="asset/img/final1.png" class="img-center"
+                          style="max-width: 300px; text-align: center;">
+                      </a>
+                      <span
+                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-danger white-text text-uppercase">HOT</span>
+                    </div>
+                    <div class="block-body text-center">
+                      <h3 class="title-3 yellow-text text-capitalize">
+                        Madu Elhusna 250gr
+                      </h3>
+                      <p class="product-description fs-6">
+                        Ukuran : 250 gr
+                      </p>
+                      <div class="product-colors mt-2">
+                        <div class="fs-6"><s>Rp 100.000</s> <span class="fs-5 fw-bolder text-danger">Rp 75.000</span>
+                        </div>
+                      </div>
+                      <div class="product-buttons mt-4">
+                        <div class="row align-items-center">
+                          <div class="col-4">
+                            <input type="number" min="1" name="jumlahProduk1" id="jumlahProduk1" value="1"
+                              class="form-control" style="width: 100%;">
+                          </div>
+                          <div class="col-8">
+                            <button type="button" class="btn btn-block bg-yellow btn-circle btn-icon-left">
+                              <i class="fa fa-shopping-cart"></i> Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-              </div>
-              <div class="mt-2 mb-3 border-bottom"></div>
-              <!-- Name input -->
-              <form action="" method="" class="formpengiriman">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="alert alert-warning" role="alert">
-                      <div class="title-3 mb-3 mt-4"> DATA PEMBELI</div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fa fa-user"></i></div>
-                          </div>
-                          <input type="text" class="form-control" name="" placeholder="Nama">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fab fa-whatsapp"></i></div>
-                          </div>
-                          <input type="text" class="form-control" name="" placeholder="No WhatsApp (required)">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-image"></i></div>
-                          </div>
-                          <input type="email" class="form-control" name="" placeholder="Email (optional)">
-                        </div>
-                      </div>
-                      <div class="title-3 mb-3 mt-4"> ALAMAT PENGIRIMAN</div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-city"></i></div>
-                          </div>
-                          <select id="kotaselect" name="state" class="form-control select2-hidden-accessible"
-                            aria-placeholder="Select" data-select2-id="select2-data-kotaselect" tabindex="-1"
-                            aria-hidden="true">
-                            <option disabled="" selected="" data-select2-id="select2-data-2-hpod"> -- KOTA -- </option>
-                            <option value="AL">Alabama</option>
-                            <option value="WY">Wyoming</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-city"></i></div>
-                          </div>
-                          <select class="form-control" aria-placeholder="Select">
-                            <option disabled="" selected=""> -- Kecamatan -- </option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-home"></i></div>
-                          </div>
-                          <input type="number" class="form-control" name="" placeholder="Alamat Pengiriman">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="alert alert-warning alert-expedisi" role="alert">
-                      <div class="title-3 mb-3 mt-4"> EKSPEDISI PENGIRIMAN</div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-truck"></i></div>
-                          </div>
-                          <select class="form-control" aria-placeholder="Select">
-                            <option disabled="" selected=""> -- Expedisi -- </option>
-                            <option value="TIKI">TIKI</option>
-                            <option value="POS">POS</option>
-                            <option value="JNE">JNE</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-shipping-fast"></i></div>
-                          </div>
-                          <select class="form-control" disabled="">
-                            <option value=""> -- Service Pengiriman -- </option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="title-3 mb-3 mt-4"> CATATAN PEMBELI</div>
-                      <textarea class="form-control" id="exampleFormControlTextarea1"
-                        placeholder="*Catatan Pembeli Untuk Admin" rows="5"></textarea>
-                    </div>
-                  </div>
                 </div>
-              </form>
-                <div class="mb-3 border-bottom"></div>
-                <div class="d-flex justify-content-between mt-4">
-                  <a href="cart.html">
-                  <button class="btn btn-warning text-white ">Kembali Ke Cart
-                    </button></a>
-                    <a href="transaksi_detail.html">
-                  <button class="btn btn-primary">Lanjutkan Pembayaran</button></a>
+
+                <div class="col-md-6">
+                  <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                    <div class="block-image text-center">
+                      <a href="#">
+                        <img src="asset/img/final2.png" class="img-center"
+                          style="max-width: 300px; text-align: center;">
+                      </a>
+                      <span
+                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-danger white-text text-uppercase">HOT</span>
+                    </div>
+                    <div class="block-body text-center">
+                      <h3 class="title-3 yellow-text text-capitalize">
+                        Madu Elhusna 250gr
+                      </h3>
+                      <p class="product-description fs-6">
+                        Ukuran : 250 gr
+                      </p>
+                      <div class="product-colors mt-2">
+                        <div class="fs-6"><s>Rp 100.000</s> <span class="fs-5 fw-bolder text-danger">Rp 75.000</span>
+                        </div>
+                      </div>
+                      <div class="product-buttons mt-4">
+                        <div class="row align-items-center">
+                          <div class="col-4">
+                            <input type="number" min="1" name="jumlahProduk1" id="jumlahProduk1" value="1"
+                              class="form-control" style="width: 100%;">
+                          </div>
+                          <div class="col-8">
+                            <button type="button" class="btn btn-block bg-yellow btn-circle btn-icon-left">
+                              <i class="fa fa-shopping-cart"></i> Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
           </div>
@@ -281,6 +248,150 @@
     </div>
   </footer>
 
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="text-center fw-bold" id="exampleModalLabel"><i class="fab fa-whatsapp"></i> Setelah Isi Data Anda
+            akan Otomatis Terhubung Dengan Admin Kami Lewat WhatsApp</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="" method="">
+            <div class="form-group">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fa fa-user"></i></div>
+                </div>
+                <input type="text" class="form-control" Name="" placeholder="Nama">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fab fa-whatsapp"></i></div>
+                </div>
+                <input type="text" class="form-control" Name="" placeholder="No WhatsApp (required)">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-image"></i></div>
+                </div>
+                <input type="email" class="form-control" Name="" placeholder="Email (optional)">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="img-modal">
+                <img src="asset/img/madu/Picture5.png">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+                </div>
+                <input type="number" class="form-control" Name="" placeholder="Madul el Husna 250ml">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="img-modal">
+                <img src="asset/img/madu/kkkk-1.png">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+                </div>
+                <input type="number" class="form-control" Name="" placeholder="Madul el Husna 500ml">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="fw-bold fs-5 mt-4"> PENGIRIMAN </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-city"></i></div>
+                </div>
+                <select id="kotaselect" name="state" class="form-control" aria-placeholder="Select">
+                  <option disabled selected> -- KOTA -- </option>
+                  <option value="AL">Alabama</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-city"></i></div>
+                </div>
+                <select class="form-control" aria-placeholder="Select">
+                  <option disabled selected> -- Kecamatan -- </option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-home"></i></div>
+                </div>
+                <input type="number" class="form-control" Name="" placeholder="Alamat Pengiriman">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="fw-bold fs-5 mt-4"> EXPEDISI PENGIRIMAN </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-truck"></i></div>
+                </div>
+                <select class="form-control" aria-placeholder="Select">
+                  <option disabled selected> -- Expedisi -- </option>
+                  <option value="TIKI">TIKI</option>
+                  <option value="POS">POS</option>
+                  <option value="JNE">JNE</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-shipping-fast"></i></div>
+                </div>
+                <select class="form-control" disabled>
+                  <option value=""> -- Service Pengiriman -- </option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="alert alert-warning" role="alert">
+                <p><b><u>RINCIAN PESANAN :</u></b></p>
+                <p>Madu 250ml </p>
+                <p>Madu 500ml </p>
+                <p>Biaya Pengiriman (250 ml) </p>
+                <div class="dropdown-divider"></div>
+                <p><b>Total : </b></p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="*Catatan Pembeli Untuk Admin"
+                rows="5"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer text-center">
+          <button type="button" class="btn btn-success"><i class="fas fa-shoping-cart"></i> CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
