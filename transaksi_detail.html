@@ -13,7 +13,7 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
   <link rel="stylesheet" href="asset/css/cart.css" />
-
+  <link rel="stylesheet" href="asset/css/detail.css" />
   <!-- Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -79,7 +79,7 @@
       <div class="row">
         <div class="col col-lg-12 col-sm-12 text-center">
           <h1 class="fs-1 fw-bolder"><span class="badge badge-primary rounded-circle px-4 py-4 mr-3"
-              style="background-color:#3F3210;"><i class="fas fa-shipping-fast"></i></span>Shipping Data</h1>
+              style="background-color:#3F3210;"><i class="far fa-credit-card"></i></span>Transaction Details</h1>
         </div>
       </div>
     </div>
@@ -92,118 +92,246 @@
       <div class="row ">
         <div class="col-lg-12">
           <div class="card shadow mb-5">
-            <div class="card-body">
+            <div class="card-body mycard">
               <div class="d-flex justify-content-between">
-                <div class="p-2 bd-highlight fw-bolder fs-4 yellow-text">Data Pengiriman </div>
-
+                <div class="p-2 bd-highlight fw-bolder fs-3 yellow-text">Detail Transaksi</div>
               </div>
               <div class="mt-2 mb-3 border-bottom"></div>
               <!-- Name input -->
-              <form action="" method="" class="formpengiriman">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="alert alert-warning" role="alert">
-                      <div class="title-3 mb-3 mt-4"> DATA PEMBELI</div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fa fa-user"></i></div>
-                          </div>
-                          <input type="text" class="form-control" name="" placeholder="Nama">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fab fa-whatsapp"></i></div>
-                          </div>
-                          <input type="text" class="form-control" name="" placeholder="No WhatsApp (required)">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-image"></i></div>
-                          </div>
-                          <input type="email" class="form-control" name="" placeholder="Email (optional)">
-                        </div>
-                      </div>
-                      <div class="title-3 mb-3 mt-4"> ALAMAT PENGIRIMAN</div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-city"></i></div>
-                          </div>
-                          <select id="kotaselect" name="state" class="form-control select2-hidden-accessible"
-                            aria-placeholder="Select" data-select2-id="select2-data-kotaselect" tabindex="-1"
-                            aria-hidden="true">
-                            <option disabled="" selected="" data-select2-id="select2-data-2-hpod"> -- KOTA -- </option>
-                            <option value="AL">Alabama</option>
-                            <option value="WY">Wyoming</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-city"></i></div>
-                          </div>
-                          <select class="form-control" aria-placeholder="Select">
-                            <option disabled="" selected=""> -- Kecamatan -- </option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-home"></i></div>
-                          </div>
-                          <input type="number" class="form-control" name="" placeholder="Alamat Pengiriman">
-                        </div>
-                      </div>
+              <div class="card-body">
+                <h5 class="d-none d-sm-block font-weight-bold fs-4 text-capitalize yellow-text mb-4">data customer</h5>
+
+                <!-- desktop -->
+                <div class="d-none d-sm-block ml-3">
+                  <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                      <p class="text-capitalize fw-bold">nama</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-9">
+                      <p class="text-capitalize">Muhammad Hartodi</p>
                     </div>
                   </div>
-                  <div class="col-lg-6">
-                    <div class="alert alert-warning alert-expedisi" role="alert">
-                      <div class="title-3 mb-3 mt-4"> EKSPEDISI PENGIRIMAN</div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-truck"></i></div>
-                          </div>
-                          <select class="form-control" aria-placeholder="Select">
-                            <option disabled="" selected=""> -- Expedisi -- </option>
-                            <option value="TIKI">TIKI</option>
-                            <option value="POS">POS</option>
-                            <option value="JNE">JNE</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-shipping-fast"></i></div>
-                          </div>
-                          <select class="form-control" disabled="">
-                            <option value=""> -- Service Pengiriman -- </option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="title-3 mb-3 mt-4"> CATATAN PEMBELI</div>
-                      <textarea class="form-control" id="exampleFormControlTextarea1"
-                        placeholder="*Catatan Pembeli Untuk Admin" rows="5"></textarea>
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <p class="text-capitalize fw-bold">no telepon / wa</p>
+                    </div>
+                    <div class="col-lg-9">
+                      <p class="text-danger">6282217107924</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <p class="text-capitalize fw-bold">alamat</p>
+                    </div>
+                    <div class="col-lg-9">
+                      <p class="text-capitalize text-justify">-komplek manglayang regency Blok f3 no 14 rt 02 rw 25 desa
+                        Cimekar kecamatan Cileunyi, Kecamatan c, KABUPATEN MANDAILING NATAL SUMATERA UTARA</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                      <p class="text-capitalize fw-bold">tanggal transaksi</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-9">
+                      <p class="text-capitalize">13-04-2021 22:25</p>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="row d-none d-sm-block">
+                  <div class="col-lg-12">
+                    <h5 class="font-weight-bold fs-4 text-capitalize yellow-text mt-4 mb-4">Detail Pembelian</h5>
+                  </div>
+                </div>
+                <!-- end desktop -->
+
+                <!-- mobile -->
+
+                <div class="d-block d-sm-none">
+                  <div class="text-center">
+                    <h5 class="font-weight-bold fs-4 text-capitalize yellow-text mb-4">data customer</h5>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="text-capitalize fw-bolder">Nama</p>
+                    </div>
+                    <div class="col-6">
+                      <p class="text-uppercase">Muhammad Hartodi</p>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="text-capitalize fw-bolder">no telepon / wa</p>
+                    </div>
+                    <div class="col-6">
+                      <p class="text-danger">6282217107924</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="text-capitalize fw-bolder">alamat</p>
+                    </div>
+                    <div class="col-6">
+                      <p class="text-uppercase">-komplek manglayang regency Blok f3 no 14 rt 02 rw 25 desa Cimekar
+                        kecamatan Cileunyi, Kecamatan c, KABUPATEN MANDAILING NATAL SUMATERA UTARA</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="text-capitalize fw-bolder">tanggal transaksi</p>
+                    </div>
+                    <div class="col-6">
+                      <p class="text-uppercase">13-04-2021 22:25</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <h5 class="font-weight-bold fs-4 text-capitalize yellow-text mt-4 mb-4">Detail Pembelian</h5>
                     </div>
                   </div>
                 </div>
-              </form>
-                <div class="mb-3 border-bottom"></div>
-                <div class="d-flex justify-content-between mt-4">
-                  <a href="cart.html">
-                  <button class="btn btn-warning text-white ">Kembali Ke Cart
-                    </button></a>
-                    <a href="transaksi_detail.html">
-                  <button class="btn btn-primary">Lanjutkan Pembayaran</button></a>
+                <!-- end mobile -->
+
+                <div class="row">
+                  <div class="col-lg-12 table-responsive p-0">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th scope="col" class="text-uppercase font-weight-bold" style="width: 8%;">no</th>
+                          <th scope="col" class="text-uppercase font-weight-bold">produk</th>
+                          <th scope="col" class="text-uppercase font-weight-bold">harga</th>
+                          <th scope="col" class="text-uppercase font-weight-bold" style="width: 8%;">qty</th>
+                          <th scope="col" class="text-uppercase font-weight-bold">total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr>
+                          <td data-label="No">1</td>
+                          <td data-label="Produk">Madu el Husna 500gr</td>
+                          <td data-label="Harga">180.000</td>
+                          <td data-label="Qty">1</td>
+                          <td data-label="Total">180.000</td>
+                        </tr>
+
+                        <tr>
+                          <td data-label="No">2</td>
+                          <td data-label="Produk">Madu el Husna 250gr</td>
+                          <td data-label="Harga">105.000</td>
+                          <td data-label="Qty">5</td>
+                          <td data-label="Total">525.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <!-- desktop -->
+                <div class="d-none d-sm-block">
+                  <div class="row mt-3">
+                    <div class="col-lg-7"></div>
+                    <div class="col-lg-3 bg-light">
+                      <p class="text-uppercase fw-bolder">sub total</p>
+                    </div>
+                    <div class="col-lg-2 text-right bg-light">
+                      <p>705.000</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-7"></div>
+                    <div class="col-lg-3 ">
+                      <p class="text-uppercase fw-bolder">shipping</p>
+                    </div>
+                    <div class="col-lg-2 text-right">
+                      <p>78.000</p>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="col-lg-7"></div>
+                    <div class="col-lg-3 bg-light">
+                      <p class="text-uppercase fw-bolder">kode unik </p>
+                    </div>
+                    <div class="col-lg-2 bg-light text-right">
+                      <p>410</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-7"></div>
+                    <div class="col-lg-3">
+                      <p class="text-uppercase font-weight-bold">total</p>
+                    </div>
+                    <div class="col-lg-2 text-right">
+                      <p class="font-weight-bold">783.410</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end desktop -->
+
+                <!-- mobile -->
+                <div class="d-block d-sm-none mb-3">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="text-uppercase">sub total</p>
+                    </div>
+                    <div class="col-6 text-right">
+                      <p>705.000</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="text-uppercase">shipping</p>
+                    </div>
+                    <div class="col-6 text-right">
+                      <p>78.000</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="text-uppercase">coupon <span class="badge badge-warning text-uppercase"></span></p>
+                    </div>
+                    <div class="col-6 text-right">
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="row .d-none .d-sm-block">
+                    <div class="col-6">
+                      <p class="text-uppercase font-weight-bold">total</p>
+                    </div>
+                    <div class="col-6 text-right">
+                      <p class="font-weight-bold">783.410</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end mobile -->
+                <div class="d-none d-sm-block">
+                  <h5 class="font-weight-bold fs-4 text-capitalize yellow-text mb-4 mt-5">Metode Transfer</h5>
+                </div>
+                <div class="d-block d-sm-none text-center">
+                  <h5 class="font-weight-bold fs-4 text-capitalize yellow-text mb-4 mt-4">Metode Transfer</h5>
+                </div>
+                <div class="row bg-light px-2 py-2 pt-5">
+                  <div class="col-md-4 text-center mb-5">
+                    <img src="https://i.ibb.co/51bmB77/BCA.png" style="max-width: 120px">
+                    <div class="mt-3 fw-bolder fs-6">BCA : 777.246.1529</div>
+                    <div class="fw-bolder fs-6">a.n Dini Yuliani</div>
+                  </div>
+                  <div class="col-md-4 text-center mb-5">
+                    <img src="https://i.ibb.co/SNt0STp/MANDIRI.png" style="max-width: 140px">
+                    <div class="mt-3 fw-bolder fs-6">Mandiri : 130.001.990.9392</div>
+                    <div class="fw-bolder fs-6">a.n Dini Yuliani</div>
+                  </div>
+                  <div class="col-md-4 text-center mb-5">
+                    <img src="https://i.ibb.co/pr5B4LJ/BRI.png" style="max-width: 150px">
+                    <div class="mt-3 fw-bolder fs-6">BRI: 040.501.039.854.505</div>
+                    <div class="fw-bolder fs-6">a.n Dini Yuliani</div>
+                  </div>
+                </div>
               </div>
+              <div class="mb-3 border-bottom"></div>
+               <div class="text-center"><span class="btn btn-success mt-3 rounded-lg" style="cursor:pointer;"
+                    onclick="konfirmasiOrder(10)">KONFIRMASI PEMBAYARAN </span></div>
             </div>
           </div>
         </div>
